@@ -1,23 +1,20 @@
-# Accept marks of 5 subjects and calculate average + grade
+m1 = float(input("Enter subject 1 marks: "))
+m2 = float(input("Enter subject 2 marks: "))
+m3 = float(input("Enter subject 3 marks: "))
+m4 = float(input("Enter subject 4 marks: "))
+m5 = float(input("Enter subject 5 marks: "))
 
-marks = []
-for i in range(1, 6):
-    m = float(input(f"Enter marks of subject {i}: "))
-    marks.append(m)
+avg = (m1 + m2 + m3 + m4 + m5) / 5
 
-average = sum(marks) / 5
-print("Average Marks =", average)
+print("Average =", avg)
 
-# Decide grade
-if average >= 90:
-    grade = 'A'
-elif average >= 75:
-    grade = 'B'
-elif average >= 60:
-    grade = 'C'
-elif average >= 45:
-    grade = 'D'
+if avg >= 90:
+    print("Grade = A")
+elif avg >= 75:
+    print("Grade = B")
+elif avg >= 60:
+    print("Grade = C")
+elif avg >= 45:
+    print("Grade = D")
 else:
-    grade = 'Fail'
-
-print("Grade =", grade)
+    print("Grade = Fail")
